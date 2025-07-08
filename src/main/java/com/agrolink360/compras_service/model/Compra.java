@@ -19,5 +19,16 @@ public class Compra {
     private double precioUnitario;
     private String comprador;
     private LocalDate fecha;
+    private boolean enviado = true;
+    private Long transportistaId; // ID del transportista asignado
+    private String estadoEntrega;
+
+    private Double distanciaKm;
+    private Integer duracionSegundos;
+    private Double costoEstimado;
+    private String direccionDestino; // ejemplo decorativo
+// "pendiente", "en tránsito", "entregado"
+// opcional: puedes usarlo luego para control
+
 }
 

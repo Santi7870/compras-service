@@ -1,4 +1,3 @@
-
 server:
   port: 8083
 
@@ -17,6 +16,13 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  redis:
+    host: localhost
+    port: 6379
+
+  cache:
+    type: redis
 
   application:
     name: compras-service
